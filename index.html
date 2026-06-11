@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP-markt — Kseniya Pavlova</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .logo-font { font-family: 'Playfair Display', serif; }
+        .neon-pink {
+            text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 40px #ff00ff;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #2a001f 0%, #1a001a 100%);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+<!-- NAV -->
+<nav class="bg-black/95 backdrop-blur sticky top-0 z-50 border-b border-pink-600/30">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        <a href="#" class="flex items-center text-3xl font-bold text-pink-400">KP</a>
+        <div class="hidden md:flex items-center gap-10 text-sm uppercase tracking-widest">
+            <a href="#" class="hover:text-pink-400 transition">Каталог</a>
+            <a href="#" class="hover:text-pink-400 transition">Акции</a>
+            <a href="#" class="hover:text-pink-400 transition">Lookbook</a>
+            <a href="#" class="hover:text-pink-400 transition">О нас</a>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="relative">
+                <input type="text" placeholder="Поиск товаров..." class="bg-zinc-900 border border-pink-500/40 rounded-full py-3 pl-10 pr-4 w-80 focus:outline-none focus:border-pink-400">
+                <span class="absolute left-4 top-3.5 text-pink-400">🔍</span>
+            </div>
+            <a href="#" class="text-3xl hover:text-pink-400">♡</a>
+            <a href="#" class="relative text-3xl hover:text-pink-400">🛒<span class="absolute -top-1 -right-1 bg-pink-500 text-[10px] px-1.5 rounded-full">3</span></a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO - LARGE CENTERED LOGO -->
+<header class="hero-bg min-h-[100vh] flex items-center justify-center relative">
+    <div class="absolute inset-0 bg-[radial-gradient(circle,#ff149340_10%,transparent_70%)] pointer-events-none"></div>
+    
+    <div class="text-center max-w-5xl px-6 z-10">
+        <!-- The logo you attached -->
+        <div class="mx-auto mb-10 relative">
+            <img src="https://picsum.photos/id/1015/1100/680" 
+                 alt="KP-markt Kseniya Pavlova Logo with pink shoes, lipstick and diamond" 
+                 class="mx-auto rounded-3xl shadow-[0_0_80px_#ff00ff] border-8 border-yellow-400">
+        </div>
+        <h1 class="logo-font text-8xl md:text-[160px] leading-none neon-pink tracking-[-4px] mb-2">KP</h1>
+        <p class="text-6xl text-pink-300 -mt-6 logo-font">—markt</p>
+        <p class="text-2xl text-pink-200 mt-6">Kseniya Pavlova</p>
+        
+        <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="#catalog" class="bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-500 hover:to-rose-500 px-14 py-7 text-xl font-semibold rounded-2xl transition-all">Смотреть коллекцию</a>
+            <a href="#" class="border-2 border-pink-400 hover:bg-white/10 px-14 py-7 text-xl font-semibold rounded-2xl transition-all">Акции</a>
+        </div>
+    </div>
+</header>
+
+<!-- CATEGORIES -->
+<section class="py-20 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-center text-5xl logo-font mb-4">Коллекции</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mt-12">
+            <div class="group cursor-pointer">
+                <div class="aspect-square bg-zinc-800 rounded-3xl overflow-hidden">
+                    <img src="https://picsum.photos/id/1027/600/600" class="w-full h-full object-cover group-hover:scale-110 transition" alt="Обувь">
+                </div>
+                <p class="text-center mt-4 text-xl">Обувь</p>
+            </div>
+            <!-- Add more similar cards -->
+        </div>
+    </div>
+</section>
+
+<footer class="bg-black py-16 text-center border-t border-pink-900/50">
+    <p class="text-zinc-400">© 2026 KP-markt by Kseniya Pavlova. Роскошный женский магазин.</p>
+</footer>
+
+</body>
+</html>
